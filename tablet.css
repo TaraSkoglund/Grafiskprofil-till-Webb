@@ -1,0 +1,11 @@
+@media (max-width: 1050px) {
+  .produkter {
+    flex-wrap: wrap;
+  }
+
+  #card {
+    width: 21rem;
+    margin-bottom: 3rem;
+    margin: 0.8rem;
+  }
+}

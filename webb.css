@@ -1,0 +1,157 @@
+@font-face {
+  font-family: ariata;
+  src: url(./assets/Fonts/ariata-medium.otf);
+}
+
+:root {
+  --header-height: 3.5rem;
+  --first-color-lighten: #eff3ea;
+  --first-color: #e3ecda;
+
+  --z-normal: 1;
+  --z-tooltrip: 10;
+  --z-fixed: 100;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--first-color-lighten) !important;
+}
+
+header {
+  position: fixed;
+  background-color: var(--first-color);
+  opacity: 70%;
+  inset: 0;
+  height: var(--header-height);
+  transition: height 400ms;
+  overflow-y: hidden;
+  z-index: var(--z-fixed);
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  );
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.logga {
+  width: 6rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.2rem;
+}
+h4 {
+  font-family: "ariata";
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  padding: 0;
+}
+
+.produkter {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin: 1.5rem;
+  margin-top: 5rem;
+}
+
+.navbar {
+  display: flex;
+  text-decoration: none;
+  padding: 0;
+}
+
+a {
+  font-family: "ariata";
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+a:hover {
+  color: #ecb194;
+}
+
+#card {
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+  background-color: white;
+}
+
+.card-img-top {
+  height: 30rem;
+}
+
+.card-body {
+  display: flex;
+  padding: 0px;
+  justify-content: space-around;
+}
+
+.card-title,
+.card-price,
+.info-titel,
+.info {
+  font-family: "ariata";
+}
+
+.card-title {
+  margin-top: 0.5rem;
+}
+
+.card-text {
+  font-size: 21px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.card-buttom {
+  margin-top: 1.3rem;
+  margin-left: 0.5rem;
+}
+
+#buttom {
+  border: black 1px solid;
+  border-radius: 5px;
+  padding: 0.5rem;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+#buttom:hover {
+  background-color: #ecb194;
+}
+
+.info-container {
+  margin: 6rem;
+}
+
+footer {
+  background-color: #e3ecda;
+  height: 10rem;
+}
+
+.footer {
+  margin-left: 6rem;
+  padding-top: 2rem;
+}
